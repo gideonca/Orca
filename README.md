@@ -1,34 +1,34 @@
 # Introduction
   - [x] Bind to a port
-  - [x] Respond to PING
-  - [ ] Respond to multiple PINGs
-  - [ ] Handle concurrent clients
-  - [ ] Implement the ECHO command
-  - [ ] Implement the SET & GET commands
-  - [ ] Expiry
+  - [x] Respond to PING (PING)
+  - [ ] Respond to multiple PINGs 
+  - [ ] Handle concurrent clients (event loop)
+  - [ ] Implement the ECHO command (ECHO)
+  - [ ] Implement the SET & GET commands (SET & GET)
+  - [ ] Expiry (Add PX argument to SET command)
 
 # Lists
-  - [ ] Create a list
-  - [ ] Append an element
-  - [ ] Append multiple elements
-  - [ ] List elements (positive indexes)
-  - [ ] List elements (negative indexes)
-  - [ ] Prepend elements
-  - [ ] Query list length
-  - [ ] Remove an element
+  - [ ] Create a list (RPUSH -> Return num elements as RESP int)
+  - [ ] Append an element (existing list support for RPUSH)
+  - [ ] Append multiple elements 
+  - [ ] List elements (positive indexes) (LRANGE w/ start and end index)
+  - [ ] List elements (negative indexes) (See above, get abs val)
+  - [ ] Prepend elements (LPUSH -> Inserts right to left rather than left to right)
+  - [ ] Query list length (LLEN)
+  - [ ] Remove an element (LPOP)
   - [ ] Remove multiple elements
-  - [ ] Blocking retrieval
-  - [ ] Blocking retrieval with timeout
+  - [ ] Blocking retrieval (BLPOP)
+  - [ ] Blocking retrieval with timeout (BLPOP with PX)
 
 # Streams
-  - [ ] The TYPE command
-  - [ ] Create a stream
-  - [ ] Validating entry IDs
-  - [ ] Partially auto-generated IDs
+  - [ ] The TYPE command (TYPE)
+  - [ ] Create a stream (XADD - id's are random seq num - current ms)
+  - [ ] Validating entry IDs (Verify new id's are greater than the stream top item)
+  - [ ] Partially auto-generated IDs 
   - [ ] Fully auto-generated IDs
-  - [ ] Query entries from stream
-  - [ ] Query with -
-  - [ ] Query with +
+  - [ ] Query entries from stream (XRANGE - return RESP Array of entries)
+  - [ ] Query with - (Return entries from beginning of stream to given id)
+  - [ ] Query with + (Retrieve entries from given id to end of stream)
   - [ ] Query single stream using XREAD
   - [ ] Query multiple streams using XREAD
   - [ ] Blocking reads
