@@ -1,5 +1,5 @@
 {
-  "name": "axolotl",
+  "name": "orca",
   "version": "1.0.0",
   "description": "- [ ] Bind to a port   - [ ] Respond to PING   - [ ] Respond to multiple PINGs   - [ ] Handle concurrent clients   - [ ] Implement the ECHO command   - [ ] Implement the SET & GET commands   - [ ] Expiry",
   "main": "index.js",
