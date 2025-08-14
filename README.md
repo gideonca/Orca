@@ -1,5 +1,5 @@
 # Introduction
-  - [ ] Bind to a port
+  - [x] Bind to a port
   - [ ] Respond to PING
   - [ ] Respond to multiple PINGs
   - [ ] Handle concurrent clients
