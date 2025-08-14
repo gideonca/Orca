@@ -11,4 +11,4 @@ const server = net.createServer((connection) => {
 
 // Start server on port 6379 and bind to localhost
 console.log("Server listening...");
-server.listen(6379, "127.0.0.1");
+server.listen(8080, "127.0.0.1");

@@ -1,7 +1,7 @@
 // client.js
 const net = require('net');
 
-const client = net.createConnection({ port: 6397 }, () => {
+const client = net.createConnection({ port: 8080 }, () => {
     console.log('Connected to server');
     client.write('Ping!');
 });
